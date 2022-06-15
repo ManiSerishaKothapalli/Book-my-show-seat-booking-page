@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book my show</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="movie-container">
+    <label for="movie">Pick a movie!</label>
+    <select name="movie" id="movie">
+      <option value="350">Jurassic World: Dominion (Rs.350)</option>
+      <option value="300">Joker (Rs.300)</option>
+      <option value="300">Avengers (Rs.300)</option>
+      <option value="200">The Medium (Rs.200)</option>
+    </select>
+  </div>
+
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="seat ">1</div>
+      <div class="seat sold">2</div>
+      <div class="seat ">3</div>
+      <div class="seat ">4</div>
+      <div class="seat ">5</div>
+      <div class="seat">6</div>
+      <div class="seat">7</div>
+      <div class="seat sold">8</div>
+      <div class="seat">9</div>
+      <div class="seat">10</div>
+    </div>
+    <div class="row">
+      <div class="seat">1</div>
+      <div class="seat ">2</div>
+      <div class="seat">3</div>
+      <div class="seat sold">4</div>
+      <div class="seat">5</div>
+      <div class="seat sold">6</div>
+      <div class="seat ">7</div>
+      <div class="seat">8</div>
+      <div class="seat sold">9</div>
+      <div class="seat">10</div>
+    </div>
+    <div class="row">
+      <div class="seat ">1</div>
+      <div class="seat">2</div>
+      <div class="seat">3</div>
+      <div class="seat">4</div>
+      <div class="seat sold">5</div>
+      <div class="seat">6</div>
+      <div class="seat ">7</div>
+      <div class="seat">8</div>
+      <div class="seat ">9</div>
+      <div class="seat">10</div>
+    </div>
+    <div class="row">
+      <div class="seat sold">1</div>
+      <div class="seat">2</div>
+      <div class="seat sold">3</div>
+      <div class="seat">4</div>
+      <div class="seat">5</div>
+      <div class="seat sold">6</div>
+      <div class="seat">7</div>
+      <div class="seat">8</div>
+      <div class="seat">9</div>
+      <div class="seat">10</div>
+    </div>
+    <div class="row">
+      <div class="seat sold">1</div>
+      <div class="seat">2</div>
+      <div class="seat">3</div>
+      <div class="seat">4</div>
+      <div class="seat">5</div>
+      <div class="seat">6</div>
+      <div class="seat sold">7</div>
+      <div class="seat">8</div>
+      <div class="seat">9</div>
+      <div class="seat ">10</div>
+    </div>
+    <div class="row">
+      <div class="seat sold">1</div>
+      <div class="seat">2</div>
+      <div class="seat sold">3</div>
+      <div class="seat">4</div>
+      <div class="seat">5</div>
+      <div class="seat sold">6</div>
+      <div class="seat ">7</div>
+      <div class="seat">8</div>
+      <div class="seat">9</div>
+      <div class="seat sold">10</div>
+    </div>
+    <div class="screen"></div>
+  </div>
+
+  <div class="movie-showcase">
+    <ul class="showcase">
+      <li>
+        <div class="seat sold"></div>
+        <div class="state">Sold</div>
+      </li>
+      <li>
+        <div class="seat available"></div>
+        <div class="state">Available</div>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <div class="state">Selected</div>
+      </li>
+
+    </ul>
+  </div>
+
+  <p class="text">You have selected <span id="count">0</span> seats for a price of Rs.<span id="total">0</span></p>
+
+  <div class="pay-button">
+    <button class="pay">Pay Rs.<span id="total-money">0</span></button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
